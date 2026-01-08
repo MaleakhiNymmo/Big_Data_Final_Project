@@ -1,0 +1,10 @@
+[2026-01-06 11:36:03] [EXTRACT_SRC1] Success. File: raw_taxi_data.csv, Rows: 150000, Size: 8.82MB, Time: 0.9659s
+[2026-01-06 11:36:03] [EXTRACT_SRC2] Success. File: raw_weather_data.json, Rows: 744, Size: 0.03MB, Time: 0.0203s
+[2026-01-06 11:36:03] [TRANSFORM] Outlier Handling (IQR): Dibuang 21839 baris data jarak aneh.
+[2026-01-06 11:36:04] [VALIDATION] Distribusi Total Amount Skewness: 0.83
+[2026-01-06 11:36:07] [LOAD] Success Load to DW. Rows: 128109. Time: 3.36s
+[2026-01-06 14:28:11] [EXTRACT_TAXI] Success. Rows: 150000, Size: 8.82MB
+[2026-01-06 14:28:11] [EXTRACT_WEATHER] Success. Rows: 744, Size: 0.03MB
+[2026-01-06 14:28:11] [TRANSFORM] Outlier Removal: Dibuang 21839 baris.
+[2026-01-06 14:28:13] [DATALAKE] Data bersih disimpan ke: /content/drive/MyDrive/bigdata_final_project/datalake/processed_trips_data.csv
+[2026-01-06 14:28:16] [LOAD] Success Load to Warehouse: /content/drive/MyDrive/bigdata_final_project/warehouse/transport_dw.db
